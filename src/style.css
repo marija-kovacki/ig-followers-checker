@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: oklch(96.905% 0.0055 297.216);
+  color: oklch(28.3% 0.141 291.089);
+}
+
+button {
+  padding: 8px 12px;
+  background-color: oklch(55.5% 0.163 48.998);
+  color: oklch(98.7% 0.022 95.277);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#modal {
+  display: none;
+}
+
+#modal.open {
+  display: block;
+  position: absolute;
+  width: 600px;
+  height: auto;
+  background-color: white;
+  color: black;
+}
+
+#backdrop {
+  display: none;
+}

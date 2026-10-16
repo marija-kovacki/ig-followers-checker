@@ -9,22 +9,24 @@
     <title>Instagram followers checker</title>
   </head>
   <body>
-    <header>
+    <header class="mx-auto flex justify-between m-10 sm:flex-row font-sans">
       <a href="/">
         <img src="/logo.png" alt="Instagram followers checker logo" />
       </a>
-      <h1 class="text-3xl font-bold underline">Instagram followers checker</h1>
+      <h1 class="text-2xl">Instagram followers checker</h1>
     </header>
-    <main id="app" role="page">
+    <main id="app" class="font-sans">
       <h2>Compare your followers and following</h2>
       <p>Find out how to export your data from your personal account.</p>
-      <button
-        id="demoModalTrigger"
-        type="button"
-        aria-label="How to export your Instagram data"
-      ></button>
-      <div role="dialog"></div>
-      <div class="modal-backgroud"></div>
+      <button id="demoModalTrigger" type="button" aria-label="How to export your Instagram data">
+        button
+      </button>
+      <div id="modal" role="dialog">
+        <h1>Modal content</h1>
+        <p>Modal text</p>
+        <button id="closeBtn" aria-label="close">x</button>
+      </div>
+      <div id="backdrop" class="modal-backgroud"></div>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
